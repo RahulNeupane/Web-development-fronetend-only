@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid media query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            background-color: rgb(240, 211, 216);
+            border: 2px solid;
+            padding: 10px 20px;
+        }
+
+        @media only screen and (max-width:400px) {
+            body {
+                background-color: rgb(240, 97, 97);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:401px) and (max-width:750px) {
+            body {
+                background-color: rgb(65, 235, 65);
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+            
+        }
+
+        @media (min-width:751px) and (max-width:1000px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media (min-width:1001px) {
+            body {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+
+        <section class="bdr">
+            <h2>Learn CSS in Nepali</h2>
+        </section>
+        <aside class="bdr">
+            <h3>More About Us</h3>
+        </aside>
+        <footer class="bdr">
+            Copyright Rahul Neupane || All rights reserved
+        </footer>
+    </div>
+</body>
+
+</html>
