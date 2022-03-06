@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #container{
+            border: 4px solid rgb(51, 158, 2);
+            width: 900px;
+            background-color: rgb(230, 255, 89);
+            margin: 33px auto;
+        }
+        .item{
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 5px;
+            background: rgb(248, 238, 238);
+        }
+        #fruit{
+            width: 48%;
+            float: left;
+        }
+        #computer{
+            width: 48% ;
+            float: right;
+        } 
+        
+        #stationary{
+            width:99% ;
+            clear: both;
+            
+        }
+
+        h3{
+            font-family: 'Shizuru', cursive;
+            color: rgb(0, 0, 0);
+        }
+        p{
+            font-family: 'Patrick Hand', cursive;
+            color: rgb(255, 0, 0);
+            text-align: justify;
+        }
+        h1{
+            width: 40%;
+            margin: auto;
+        }
+    </style>
+<body>
+    <div id="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p class="para" id="fruitspara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo ut totam unde velit suscipit deleniti fuga nihil at esse vero id laboriosam, odio corporis ex illum quibusdam repudiandae nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis velit nesciunt repellat deleniti dicta ratione. Quae quis inventore rem voluptas possimus molestias.
+            </p>
+        </div>
+        
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p class="para" id="computerpara">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, doloremque illum ab rerum eos enim officia? Voluptas in mollitia illum atque doloribus aliquid officiis fugiat autem dolorum minima! Quibusdam modi cupiditate animi temporibus fuga, libero quas eius voluptatibus ducimus nesciunt, beatae eveniet deleniti aperiam. Pariatur!
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p class="para" id="stationarypara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi autem voluptatum! Dolorem numquam, sequi odio repudiandae officia eveniet deleniti, nisi optio unde suscipit dolor fugiat laudantium, molestias cum tempore maiores accusamus cumque? Repellat, adipisci eveniet in quae animi nisi maxime debitis sint doloremque?
+            </p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Stationary</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                quibusdam explicabo, porro magnam quas sint enim cumque minima odit cupiditate ex itaque, eaque
+                distinctio sed ipsam totam, nihil tenetur. Recusandae.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

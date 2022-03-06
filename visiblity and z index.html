@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z index</title>
+    <style>
+        .box{
+            width: 90px;
+            border: 3px solid black;
+            margin-top: 5px;
+            height: 90px;
+        }
+        #box1{
+            position: relative;
+            background-color: red;
+            top: 12px;
+            z-index: 15;
+        }
+        #box2{
+            position: relative;
+            top: 0px;
+            /* if boxes overlap then one with bigger z index will appear on top  */
+            z-index: 10;
+            background-color: green;
+           
+        }
+        #box3{
+            /* Box will be hidden but its place wil be reserved */
+            visibility: hidden;
+            background-color: blue;
+           
+        }
+        #box4{
+            background-color: yellow;
+        }
+        #box5{
+            /* box will be hidden and its sace will not be reserved */
+            display: none;
+            background-color: rgb(186, 87, 243);
+        }
+        #box6{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+    <div class="box" id="box6">6</div>
+</body>
+</html>

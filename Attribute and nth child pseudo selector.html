@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child selector</title>
+    <style>
+        input{
+            display: block;
+            margin-top: 4px;
+        }
+        .container{
+            display: block;
+            width: 200px;
+            border: 2px solid red;
+            margin: auto;
+        }
+        input[type='text']
+        {
+            padding: 5px;
+            border-radius: 7px;
+            border-color: aqua;
+        }
+        input[type='email']
+        {
+            padding: 5px;
+            border-radius: 7px;
+            border-color: violet;
+        }
+        input[type='password']
+        {
+            padding: 5px;
+            border-radius: 7px;
+            border-color: yellow;
+        }
+        input[type='submit']
+        {
+            padding: 5px;
+            border-radius: 7px;
+            color: white;
+            background-color: rebeccapurple;
+        }
+    a[target]{
+        font-size: 30px;
+        color:rgba(49, 243, 31, 0.829)
+    }
+
+    a[target='_self']{
+        text-decoration: none;
+        color: aqua;
+    }
+
+    /* applied on 3rd item */
+    /* li:nth-child(3){
+        color: gray;
+    } */
+
+    /* apply on 2*n item (n =0,1,2,3... ) */
+    /* li:nth-child(2n){
+        color: red;
+    } */
+
+    /* for odd value */
+    li:nth-child(odd){
+        color: red;
+    }
+
+    /* for even value */
+    li:nth-child(even){
+        background-color: rgb(151, 137, 137);
+        color: rgb(248, 182, 231);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://google.com" target="_blank">Goto google</a></h1>
+        <h1><a href="https://facebook.com" target="_self">Goto facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1 </li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

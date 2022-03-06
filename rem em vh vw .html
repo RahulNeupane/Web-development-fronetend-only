@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem vw and vh</title>
+    <style>
+    html{
+        font-size: 25px;
+    }
+        .container{
+            height: 98vh;
+            /* take height according to current window  */
+            /* width: 100vw;  */
+            /* takes full width not much used  */
+            border:2px solid black;
+            font-size: 7px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        #heading1{
+             /* font-size: 3em;  */
+             /*multiply given value with parent value (container is 5 so here 7*3=21*/
+             /* padding: 2em;  */
+             /*given value  *  given font-size * parent font-size */
+        }
+
+        #heading2{
+             /* font-size: 3rem; */
+             /* default html size * given value */
+            /* padding: 3rem; */
+             /*default html size * given value */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading1">This is First heading</h1>
+        <h1 id="heading2">This is Second heading</h1>
+        <h1 id="heading3">This is Third heading</h1>
+    </div>
+</body>
+</html>

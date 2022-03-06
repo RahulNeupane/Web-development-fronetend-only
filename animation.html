@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: yellow;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: relative;
+            /* animation-name: rahul; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 1; */
+            /* stops animation at to value  */
+            /* animation-fill-mode:forwards; */
+
+            /* first slow and then fast  */
+            /* animation-timing-function: ease-in; */
+
+            /* first fast and then slow */
+            /* animation-timing-function: ease-out; */
+
+            /* slow fast and slow */
+            /* animation-timing-function: ease-in-out; */
+
+            /* animation-delay: 1s; */
+            /* animation-direction: reverse; */
+
+            /* shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rahul 5s ease-in-out 1s 2 normal forwards ;
+
+            /* animation: rahul 5s timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes rahul {
+            form{
+                width: 0px;
+            }
+            to{
+                width: 1200px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

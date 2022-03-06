@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 544px;
+            width: 100%;
+            /* Initialize container as flexbox */
+            display: flex;
+
+            /* flex property for a flex container */
+            /* flex-direction: column; */
+            flex-direction: row; /* by default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            flex-wrap: wrap; /*by default nowrap */
+            /* flex-wrap: wrap-reverse; */
+
+            /* consist of flex-direction and flex-wrap */
+            flex-flow: row wrap;
+            justify-content: center;
+            /* justify-content: space-between; space beteween boxes  */
+            /* justify-content: space-evenly; equall amount of space betwwen  box and also at edge */
+            /* justify-content: space-around; like having margin on x-axis */
+
+            align-items: center;
+            /* align-items: flex-end;  at bottom line  */
+            /* align-items: flex-start; at top line  */
+            /* align-items: stretch; even space vertically */
+
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: steelblue;
+            border: 3px solid rgb(255, 120, 143);
+            margin: 5px;
+            padding: 5px;
+        }
+        #box-1{
+            /* order: 2; higher the order the last position box gets  */
+            /* flex-grow: 1; increases box size by 1 times compared to other */
+            /* flex-shrink: 2; shrinks box size by 2 times compared to other */
+        }
+        #box-2{
+            /* order: 1; */
+            /* flex-grow: 2; */
+
+            /* flex-basis: 250px; */
+            /* will change width of box when flex direction is row */
+            /* will chance box height when flex set to column */
+            
+        }
+        #box-3{
+            /* flex: 2 5 320px; */  /* (grow ,shrink ,basis) */
+
+
+            /* aligning item   */
+            /* align-self: flex-start;  */
+            /* align-self: center; */
+            /* align-self: flex-end; */
+        }
+    </style>
+</head>
+<body>
+    <h2>This is Flexbox Tutorial</h2>
+    <div class="container">
+
+        <div class="item" id="box-1">First Box</div>
+        <div class="item" id="box-2">Second box</div>
+        <div class="item" id="box-3">Third Box</div>
+        <!-- <div class="item" id="box-4">Fourth Box</div>
+        <div class="item" id="box-5">Fifth Box</div>
+        <div class="item" id="box-6">Sixth Box</div> -->
+        
+    </div>
+</body>
+</html>

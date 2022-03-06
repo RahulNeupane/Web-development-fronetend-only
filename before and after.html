@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of before and after</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900');
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            list-style: none;
+            padding:10px 30px;
+        }
+        
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        section{
+            display: flex;
+            margin: 3px 230px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h1{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, tenetur? Quis assumenda mollitia asperiores, quos pariatur dicta maxime ab aliquam neque quas doloribus omnis ex ut consequuntur praesentium, quia ratione aspernatur quidem voluptatem! Delectus deserunt tempore explicabo fugit exercitationem ad architecto neque enim perspiciatis commodi! Rerum, ducimus, iusto, aperiam quam facere quidem laborum illum deleniti ipsam quos sit asperiores in dolores. Minima, deleniti est!</p>
+    </section>
+
+    
+</body>
+</html>
